@@ -5,7 +5,7 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <>
-      <div className="bg-stone-950 text-zinc-400">
+      <div className="pb-10 bg-stone-950 text-zinc-400">
         <div>
           <p className="pt-5 text-base text-zinc-50">Furqan Noor</p>
         </div>
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           working on various side projects (i&#39;ve got plenty of them :p).
         </div>
         <div className="pt-5">
-          feel free to reach me out at{" "}
+          feel free to reach out to me at{" "}
           <Link
             href={"https://www.linkedin.com/in/furqan-noor/"}
             className="underline underline-offset-8 text-zinc-50"
