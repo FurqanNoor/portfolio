@@ -2,7 +2,7 @@ import { MapPin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <>
       <div className="bg-stone-950 text-zinc-400">
@@ -18,13 +18,13 @@ const Hero = () => {
         </div>
         <div className="pt-5">
           hi, i am currently a freshman at a university of applied sciences,
-          pursuing a bachelor's degree in information technology. my interests
-          include full-stack development and understanding how technology
-          impacts everyday applications.
+          pursuing a bachelor&#39;s degree in information technology. my
+          interests include full-stack development and understanding how
+          technology impacts everyday applications.
         </div>
         <div className="pt-5">
           beyond my studies, i enjoy listening to music, playing videogames and
-          working on various side projects (i've got plenty of them :p).
+          working on various side projects (i&#39;ve got plenty of them :p).
         </div>
         <div className="pt-5">
           feel free to reach me out at{" "}

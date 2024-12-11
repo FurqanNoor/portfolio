@@ -7,13 +7,13 @@ const Navbar = () => {
     <>
       <div className="max-w-2xl h-20 text-zinc-50 text-base bg-stone-950 sticky top-0">
         <div className="flex gap-7 pt-5">
-          <Link href="#">
+          <Link href="/">
             <p className="hover:text-zinc-500">home</p>
           </Link>
-          <Link href="#">
+          <Link href="/">
             <p className="hover:text-zinc-500">about</p>
           </Link>
-          <Link href="#">
+          <Link href="/">
             <p className="hover:text-zinc-500">projects</p>
           </Link>
           <div className="pl-96">
