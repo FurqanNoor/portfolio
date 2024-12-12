@@ -31,7 +31,7 @@ const LeafletMap: React.FC = () => {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
             padding: 0; 
             margin: 0;">
-              <img src="/pfp.jpg" alt="avatar" style="
+              <img src="/cat.jpg" alt="avatar" style="
                 width: 50px; 
                 height: 50px; 
                 border-radius: 50%; 

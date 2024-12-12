@@ -36,8 +36,8 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <div className="bg-stone-950 py-8">
-      <h1 className="mb-8 text-base text-zinc-50 flex gap-2">
+    <div className="bg-stone-950 pt-5 pb-5">
+      <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
         Some of my projects below
         <MoveDownLeft size={24} color="white" />
       </h1>

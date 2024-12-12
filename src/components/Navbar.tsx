@@ -10,13 +10,16 @@ const Navbar = () => {
           <Link href="/">
             <p className="hover:text-zinc-500">home</p>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <p className="hover:text-zinc-500">about</p>
           </Link>
-          <Link href="/">
+          <Link href="/projects-work">
             <p className="hover:text-zinc-500">projects</p>
           </Link>
-          <div className="sm:pl-96 pl-24 pt-1">
+          <Link href="/projects-work">
+            <p className="hover:text-zinc-500">work</p>
+          </Link>
+          <div className="sm:pl-80 pl-24 pt-1">
             <Sun className="w-5 h-5"></Sun>
           </div>
         </div>
