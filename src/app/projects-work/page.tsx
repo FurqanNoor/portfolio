@@ -40,8 +40,7 @@ const projects = [
   {
     name: "Mosque-Medina",
     date: "2023/02",
-    description:
-      "A website for a local mosque showcasing their information.",
+    description: "A website for a local mosque showcasing their information.",
     link: "https://mosque-medina.vercel.app//",
     status: "Finished",
   },
@@ -53,11 +52,13 @@ const workExperiences = [
     company: "Finnish Defence Forces",
     duration: "2023/08 - 2024/03",
     description:
-      "Developed and integrated simulation tools and training scenarios for military applications. Contributed to projects such as a bouncing mine, trenching spade, and Steel Eagle drone in VBS4. Provided technical support, maintained virtual training systems, and trained others in simulator technologies.",
-  },
+      "Developed simulation tools and training scenarios for military use, contributing to projects. Maintained systems and trained others in simulator technologies.",
+  }
+  ,
+
   {
     role: "Sales Assistant, Internship",
-    company: "Flying Tiger Copenhagen",
+    company: "Flying Tiger",
     duration: "2021/02 - 2021/03",
     description:
       "On-the-job learning, the topic of the training was customer service. I was at the cash register, shelving products and doing warehouse work.",
@@ -83,7 +84,9 @@ const ProjectsSection = () => (
               <span className="text-sm text-zinc-500">{project.date}</span>
             </div>
             <p className="text-zinc-400">{project.description}</p>
-            <p className="text-sm text-zinc-500 mt-1">Status: {project.status}</p>
+            <p className="text-sm text-zinc-500 mt-1">
+              Status: {project.status}
+            </p>
           </div>
           <Link
             href={project.link}
@@ -102,28 +105,28 @@ const ProjectsSection = () => (
 
 const WorkSection = () => (
   <div id="work">
-  <div  className="bg-stone-950 pt-5 pb-5">
-    <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
-      Work Experience
-      <MoveDownLeft size={24} color="white" />
-    </h1>
+    <div className="bg-stone-950 pt-5 pb-5">
+      <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
+        Work Experience
+        <MoveDownLeft size={24} color="white" />
+      </h1>
 
-    <div className="space-y-6">
-      {workExperiences.map((work, index) => (
-        <div
-          key={index}
-          className="border-b border-zinc-800 pb-6 last:border-0"
-        >
-          <div className="flex items-center gap-4">
-            <h2 className="text-zinc-50">{work.role}</h2>
-            <span className="text-sm text-zinc-500">{work.company}</span>
+      <div className="space-y-6">
+        {workExperiences.map((work, index) => (
+          <div
+            key={index}
+            className="border-b border-zinc-800 pb-6 last:border-0"
+          >
+            <div className="flex items-center gap-4">
+              <h2 className="text-zinc-50">{work.role}</h2>
+              <span className="text-sm text-zinc-500">{work.company}</span>
+            </div>
+            <p className="text-zinc-400">{work.duration}</p>
+            <p className="text-zinc-400 mt-1">{work.description}</p>
           </div>
-          <p className="text-zinc-400">{work.duration}</p>
-          <p className="text-zinc-400 mt-1">{work.description}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
   </div>
 );
 
