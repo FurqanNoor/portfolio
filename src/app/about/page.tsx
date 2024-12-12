@@ -7,7 +7,7 @@ const page = () => {
   const education = [
     {
       name: "Turku vocational institute",
-      date: "2020/08 - 2023/05",
+      date: "2023/05",
       description: "undergraduate degree, computer software engineering",
       link: "https://www.turkuai.fi/turun-ammatti-instituutti/koulutukset/ammatilliset-tutkinnot/tieto-ja-viestintatekniikka",
     },
