@@ -5,7 +5,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="max-w-2xl h-20 text-zinc-50 text-base bg-stone-950 sticky top-0">
+      <div className="z-40 max-w-2xl h-20 text-zinc-50 text-base bg-stone-950 sticky top-0">
         <div className="flex gap-7 pt-5">
           <Link href="/">
             <p className="hover:text-zinc-500">home</p>

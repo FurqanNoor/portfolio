@@ -21,13 +21,15 @@ const projects: Project[] = [
   {
     name: "Enolan Autopesu",
     date: "2024/10",
-    description: "A website for a local car wash company providing details about their services.",
+    description:
+      "A website for a local car wash company providing details about their services.",
     link: "https://www.enolanautopesu.com/",
   },
   {
     name: "Rhodos Fast Food",
     date: "2024/05",
-    description: "A website for a local fast-food place showcasing their menu and special offers.",
+    description:
+      "A website for a local fast-food place showcasing their menu and special offers.",
     link: "https://rhodoskebab.com/",
   },
 ];
@@ -55,6 +57,8 @@ const Projects = () => {
             </div>
             <Link
               href={project.link}
+              rel="noopener noreferrer"
+              target="_blank"
               className="ml-4 flex items-center gap-1 text-zinc-400 hover:text-zinc-50"
             >
               Link
