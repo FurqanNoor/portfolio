@@ -4,6 +4,26 @@ import { BiCoffeeTogo } from "react-icons/bi";
 import Link from "next/link";
 import React from "react";
 
+interface DividerProps {
+  className?: string;
+}
+
+export const DottedDivider: React.FC<DividerProps> = ({ className = "" }) => {
+  return (
+    <div
+      className={`w-full flex items-center justify-start space-x-2 bg-stone-950 ${className}`}
+    >
+      {[...Array(55)].map((_, i) => (
+        <div
+          key={i}
+          className="w-1 h-1 rounded-full bg-current animate-bounce"
+          style={{ animationDelay: `${i * 0.05}s` }}
+        ></div>
+      ))}
+    </div>
+  );
+};
+
 const Socials = () => {
   return (
     <>
@@ -14,7 +34,7 @@ const Socials = () => {
               href="https://github.com/FurqanNoor"
               rel="noopener noreferrer"
               target="_blank"
-              className="relative h-full w-full group flex flex-col justify-between overflow-hidden rounded-xl text-white transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95 bg-zinc-900"
+              className="relative sm:h-full h-24 w-full group flex flex-col justify-between overflow-hidden rounded-xl text-white transform-gpu transition-all duration-500 will-change-[outline,_transform] group-hover:scale-95 active:scale-100 hover:scale-95 bg-zinc-900"
             >
               <div className="flex items-center justify-center h-full">
                 <Github size={34} />
@@ -45,7 +65,7 @@ const Socials = () => {
           </Link>
         </div>
         <div className="grid md:grid-cols-6 grid-cols-3 pt-3 gap-2">
-          <div className="">
+          <div className="col-span-1">
             <Link
               href="https://www.linkedin.com/in/furqan-noor/"
               rel="noopener noreferrer"
@@ -70,7 +90,7 @@ const Socials = () => {
             </Link>
           </div>
           <Link
-            className="col-span-4 bg-zinc-900 h-24 text-white rounded-xl items-center flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu"
+            className="sm:col-span-4 col-span-1  bg-zinc-900 h-24 text-white rounded-xl items-center flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu"
             href="/"
             rel="noopener noreferrer"
             target="_blank"
@@ -81,6 +101,7 @@ const Socials = () => {
           </Link>
         </div>
       </div>
+      <DottedDivider className="text-zinc-400" />
     </>
   );
 };

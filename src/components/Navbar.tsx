@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link href="/">
             <p className="hover:text-zinc-500">projects</p>
           </Link>
-          <div className="pl-96">
+          <div className="sm:pl-96 pl-24 pt-1">
             <Sun className="w-5 h-5"></Sun>
           </div>
         </div>
