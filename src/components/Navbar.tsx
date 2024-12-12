@@ -9,7 +9,7 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="z-40 max-w-2xl h-20 text-black dark:text-zinc-50 sticky top-0 transition-colors">
+    <div className="z-40 max-w-2xl h-20 bg-zinc-50 dark:bg-stone-950 text-black dark:text-zinc-50 sticky top-0 transition-colors">
       <div className="flex gap-7 pt-5">
         <Link href="/">
           <p className="hover:text-gray-500 dark:hover:text-zinc-500">home</p>
