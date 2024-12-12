@@ -10,9 +10,9 @@ const GitHubBlock = () => {
       target="_blank"
     >
       <div
-        className="absolute inset-0 bg-fill bg-left opacity-70 transition-all duration-500 transform scale-105 hover:scale-110"
+        className="absolute inset-0 bg-cover bg-left opacity-70 transition-all duration-500 transform scale-105 hover:scale-110"
         style={{
-          backgroundImage: `url('/github.png')`,
+          backgroundImage: `url('/bg.jpg')`,
         }}
       ></div>
 
@@ -21,7 +21,7 @@ const GitHubBlock = () => {
       <div className="flex items-center justify-center h-full relative z-10">
         <Github
           size={34}
-          className="transition-all duration-500 hover:text-blue-400"
+          className="transition-all duration-500"
         />
       </div>
     </Link>
