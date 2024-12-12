@@ -1,5 +1,6 @@
 "use client";
 
+
 import { Github, Linkedin } from "lucide-react";
 import { FaSpotify, FaXTwitter } from "react-icons/fa6";
 import { BiCoffeeTogo } from "react-icons/bi";
@@ -19,6 +20,7 @@ const Socials = () => {
         const recentTrack = data.recenttracks?.track?.[0];
 
         if (recentTrack?.image?.length > 0) {
+          /* eslint-disable @typescript-eslint/no-explicit-any */
           const largeImage = recentTrack.image.find((img: any) => img.size === "extralarge");
           setAlbumCover(largeImage?.["#text"] || null);
         }
