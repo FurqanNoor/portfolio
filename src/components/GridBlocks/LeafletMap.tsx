@@ -14,7 +14,7 @@ const LeafletMap: React.FC = () => {
       });
 
       L.tileLayer(
-        `https://api.maptiler.com/maps/basic-v2-dark/{z}/{x}/{y}.png?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
+        `https://api.maptiler.com/maps/basic-v2-dark/{z}/{x}/{y}.png?key=${process.env.MAPTILER_API_KEY}`
       ).addTo(map);
 
       const avatarIcon = L.divIcon({
