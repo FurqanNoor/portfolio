@@ -14,7 +14,7 @@ const LeafletMap: React.FC = () => {
       });
 
       L.tileLayer(
-        `https://api.maptiler.com/maps/basic-v2-dark/{z}/{x}/{y}.png?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
+        `https://api.maptiler.com/maps/streets-v2-dark/{z}/{x}/{y}.png?key=${process.env.NEXT_PUBLIC_MAPTILER_API_KEY}`
       ).addTo(map);
 
       const avatarIcon = L.divIcon({
@@ -24,16 +24,16 @@ const LeafletMap: React.FC = () => {
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            width: 60px; 
-            height: 60px; 
+            width: 48px; 
+            height: 48px; 
             border-radius: 50%; 
             background: #e4e4e7; 
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+            box-shadow: 0 4px 6px rgba(0.1, 0.1, 0.1, 0.1); 
             padding: 0; 
             margin: 0;">
               <img src="/cat.jpg" alt="avatar" style="
-                width: 50px; 
-                height: 50px; 
+                width: 40px; 
+                height: 40px; 
                 border-radius: 50%; 
                 display: block; 
                 padding: 0; 

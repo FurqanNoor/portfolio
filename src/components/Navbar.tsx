@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="/projects-work#work">
             <p className="hover:text-zinc-500">work</p>
           </Link>
-          <div className="sm:pl-80 pl-10 pt-1">
+          <div className="sm:pl-80 pl-9 pt-1">
             <Sun className="w-5 h-5"></Sun>
           </div>
         </div>

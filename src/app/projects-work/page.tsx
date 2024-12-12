@@ -101,7 +101,8 @@ const ProjectsSection = () => (
 );
 
 const WorkSection = () => (
-  <div id="work" className="bg-stone-950 pt-5 pb-5">
+  <div id="work">
+  <div  className="bg-stone-950 pt-5 pb-5">
     <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
       Work Experience
       <MoveDownLeft size={24} color="white" />
@@ -122,6 +123,7 @@ const WorkSection = () => (
         </div>
       ))}
     </div>
+  </div>
   </div>
 );
 
