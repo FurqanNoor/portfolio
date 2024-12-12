@@ -1,3 +1,5 @@
+"use client";
+
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
@@ -33,7 +35,7 @@ const projects = [
     name: "2D-Topdown game",
     date: "2023/04",
     description:
-      "A game made with unity using public assets. this was a project i did in school",
+      "A game made with unity using public assets. This was a project I did in school.",
     link: "https://github.com/FurqanNoor/2D-Topdown",
     status: "Finished",
   },
@@ -41,7 +43,7 @@ const projects = [
     name: "Mosque-Medina",
     date: "2023/02",
     description: "A website for a local mosque showcasing their information.",
-    link: "https://mosque-medina.vercel.app//",
+    link: "https://mosque-medina.vercel.app/",
     status: "Finished",
   },
 ];
@@ -53,9 +55,7 @@ const workExperiences = [
     duration: "2023/08 - 2024/03",
     description:
       "Developed simulation tools and training scenarios for military use, contributing to projects. Maintained systems and trained others in simulator technologies.",
-  }
-  ,
-
+  },
   {
     role: "Sales Assistant, Internship",
     company: "Flying Tiger",
@@ -66,25 +66,29 @@ const workExperiences = [
 ];
 
 const ProjectsSection = () => (
-  <div className="bg-stone-950 pt-5 pb-5">
-    <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
+  <div className="pt-5 pb-5">
+    <h1 className="mb-5 text-base text-black dark:text-zinc-50 flex gap-2">
       My projects
-      <MoveDownLeft size={24} color="white" />
+      <MoveDownLeft size={24} className="text-black dark:text-white" />
     </h1>
 
     <div className="space-y-6">
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex items-center justify-between border-b border-zinc-800 pb-6 last:border-0"
+          className="flex items-center justify-between pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0"
         >
           <div>
             <div className="flex items-center gap-4">
-              <h2 className="text-zinc-50">{project.name}</h2>
-              <span className="text-sm text-zinc-500">{project.date}</span>
+              <h2 className="text-black dark:text-zinc-50">{project.name}</h2>
+              <span className="text-sm text-gray-500 dark:text-zinc-500">
+                {project.date}
+              </span>
             </div>
-            <p className="text-zinc-400">{project.description}</p>
-            <p className="text-sm text-zinc-500 mt-1">
+            <p className="text-gray-700 dark:text-zinc-400">
+              {project.description}
+            </p>
+            <p className="text-sm text-gray-600 dark:text-zinc-500 mt-1">
               Status: {project.status}
             </p>
           </div>
@@ -92,7 +96,7 @@ const ProjectsSection = () => (
             href={project.link}
             rel="noopener noreferrer"
             target="_blank"
-            className="ml-4 flex items-center gap-1 text-zinc-400 hover:text-zinc-50"
+            className="ml-4 flex items-center gap-1 text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50"
           >
             Link
             <ArrowUpRight className="h-4 w-4" />
@@ -104,28 +108,30 @@ const ProjectsSection = () => (
 );
 
 const WorkSection = () => (
-  <div id="work">
-    <div className="bg-stone-950 pt-5 pb-5">
-      <h1 className="mb-5 text-base text-zinc-50 flex gap-2">
-        Work Experience
-        <MoveDownLeft size={24} color="white" />
-      </h1>
+  <div id="work" className="pt-5 pb-5">
+    <h1 className="mb-5 text-base text-black dark:text-zinc-50 flex gap-2">
+      Work Experience
+      <MoveDownLeft size={24} className="text-black dark:text-white" />
+    </h1>
 
-      <div className="space-y-6">
-        {workExperiences.map((work, index) => (
-          <div
-            key={index}
-            className="border-b border-zinc-800 pb-6 last:border-0"
-          >
-            <div className="flex items-center gap-4">
-              <h2 className="text-zinc-50">{work.role}</h2>
-              <span className="text-sm text-zinc-500">{work.company}</span>
-            </div>
-            <p className="text-zinc-400">{work.duration}</p>
-            <p className="text-zinc-400 mt-1">{work.description}</p>
+    <div className="space-y-6">
+      {workExperiences.map((work, index) => (
+        <div
+          key={index}
+          className="pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0"
+        >
+          <div className="flex items-center gap-4">
+            <h2 className="text-black dark:text-zinc-50">{work.role}</h2>
+            <span className="text-sm text-gray-500 dark:text-zinc-500">
+              {work.company}
+            </span>
           </div>
-        ))}
-      </div>
+          <p className="text-gray-700 dark:text-zinc-400">{work.duration}</p>
+          <p className="text-gray-700 dark:text-zinc-400 mt-1">
+            {work.description}
+          </p>
+        </div>
+      ))}
     </div>
   </div>
 );

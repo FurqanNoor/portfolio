@@ -9,7 +9,7 @@ import GitHubBlock from "./GridBlocks/Github";
 
 const Socials = () => {
   return (
-    <div className="bg-stone-950 text-zinc-400 pb-5">
+    <div className="pb-5 text-gray-800 dark:text-zinc-400">
       <div className="grid md:grid-cols-6 grid-cols-3 gap-2">
         <MapBlock />
         <SpotifyBlock />
