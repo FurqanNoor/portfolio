@@ -55,11 +55,11 @@ const projects = [
 
 const workExperiences = [
   {
-    role: "Junior Programmer",
+    role: "Software Developer",
     company: "Finnish Defence Forces",
     duration: "2023/08 - 2024/03",
     description:
-      "Developed simulation tools and training scenarios for military use, contributing to projects. Maintained systems and trained others in simulator technologies.",
+      "I completed mandatory military service as a software developer in a virtual training environment, creating add-ons and training scenarios for Bohemia Interactive Simulations' VBS4 platform, while maintaining systems and training users.",
   },
   {
     role: "Sales Assistant, Internship",
