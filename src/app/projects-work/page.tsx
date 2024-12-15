@@ -14,6 +14,7 @@ const projects = [
       "A full-stack website offering a comprehensive collection of resources related to editing.",
     link: "https://www.editingrsc.com/",
     status: "Currently Working On",
+    technologies: ["Next.js", "Typescript", "Tailwind CSS", "Vercel"],
   },
   {
     name: "Enolan Autopesu",
@@ -22,6 +23,7 @@ const projects = [
       "A website for a local car wash company providing details about their services.",
     link: "https://www.enolanautopesu.com/",
     status: "Finished",
+    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel"],
   },
   {
     name: "Rhodos Fast Food",
@@ -30,6 +32,7 @@ const projects = [
       "A website for a local fast-food place showcasing their menu and special offers.",
     link: "https://rhodoskebab.com/",
     status: "Finished",
+    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel"],
   },
   {
     name: "2D-Topdown game",
@@ -38,6 +41,7 @@ const projects = [
       "A game made with unity using public assets. This was a project I did in school.",
     link: "https://github.com/FurqanNoor/2D-Topdown",
     status: "Finished",
+    technologies: ["Unity", "C#", "GitHub"],
   },
   {
     name: "Mosque-Medina",
@@ -45,6 +49,7 @@ const projects = [
     description: "A website for a local mosque showcasing their information.",
     link: "https://mosque-medina.vercel.app/",
     status: "Finished",
+    technologies: ["HTML", "CSS", "Javascript"],
   },
 ];
 
@@ -76,31 +81,43 @@ const ProjectsSection = () => (
       {projects.map((project, index) => (
         <div
           key={index}
-          className="flex items-center justify-between pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0"
+          className="flex flex-col pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0 rounded-sm"
         >
-          <div>
-            <div className="flex items-center gap-4">
-              <h2 className="text-black dark:text-zinc-50">{project.name}</h2>
-              <span className="text-sm text-gray-500 dark:text-zinc-500">
-                {project.date}
-              </span>
+          <div className="flex items-start justify-between">
+            <div>
+              <div className="flex items-center gap-4">
+                <h2 className="text-black dark:text-zinc-50">{project.name}</h2>
+                <span className="text-sm text-gray-500 dark:text-zinc-500">
+                  {project.date}
+                </span>
+              </div>
+              <p className="text-gray-700 dark:text-zinc-400">
+                {project.description}
+              </p>
+              <p className="text-sm text-gray-600 dark:text-zinc-500 mt-1">
+                Status: {project.status}
+              </p>
             </div>
-            <p className="text-gray-700 dark:text-zinc-400">
-              {project.description}
-            </p>
-            <p className="text-sm text-gray-600 dark:text-zinc-500 mt-1">
-              Status: {project.status}
-            </p>
+            <Link
+              href={project.link}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="ml-4 flex items-center gap-1 text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50"
+            >
+              Link
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
-          <Link
-            href={project.link}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="ml-4 flex items-center gap-1 text-gray-600 dark:text-zinc-400 hover:text-black dark:hover:text-zinc-50"
-          >
-            Link
-            <ArrowUpRight className="h-4 w-4" />
-          </Link>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {project.technologies.map((tech, techIndex) => (
+              <span
+                key={techIndex}
+                className="px-2 py-1 text-xs rounded-sm bg-gray-200 dark:bg-zinc-800 text-gray-700 dark:text-zinc-300"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       ))}
     </div>
@@ -118,7 +135,7 @@ const WorkSection = () => (
       {workExperiences.map((work, index) => (
         <div
           key={index}
-          className="pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0"
+          className="pb-6 border-b border-gray-300 dark:border-zinc-800 last:border-0 rounded-sm"
         >
           <div className="flex items-center gap-4">
             <h2 className="text-black dark:text-zinc-50">{work.role}</h2>

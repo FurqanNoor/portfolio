@@ -61,7 +61,7 @@ const page = () => {
             href={"https://github.com/FurqanNoor"}
             rel="noopener noreferrer"
             target="_blank"
-            className="underline underline-offset-8 text-black dark:text-zinc-50 hover:text-blue-600 dark:hover:text-blue-400"
+            className="underline underline-offset-8 text-black dark:text-zinc-50 hover:text-zinc-600 dark:hover:text-zinc-500"
           >
             github
           </Link>{" "}
@@ -70,7 +70,7 @@ const page = () => {
             href="/projects-work"
             rel="noopener noreferrer"
             target="_blank"
-            className="underline underline-offset-8 text-black dark:text-zinc-50 hover:text-blue-600 dark:hover:text-blue-400"
+            className="underline underline-offset-8 text-black dark:text-zinc-50 hover:text-zinc-600 dark:hover:text-zinc-500"
           >
             projects.
           </Link>

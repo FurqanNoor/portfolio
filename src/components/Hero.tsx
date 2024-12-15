@@ -32,14 +32,14 @@ const Hero: React.FC = () => {
         feel free to reach out to me at{" "}
         <Link
           href="https://www.linkedin.com/in/furqan-noor/"
-          className="underline underline-offset-8 text-black dark:text-zinc-50"
+          className="underline underline-offset-8 text-black dark:text-zinc-50 dark:hover:text-zinc-500 hover:text-zinc-600"
         >
           linkedIn
         </Link>{" "}
         or drop an{" "}
         <Link
           href="mailto:furqannoor311@gmail.com"
-          className="underline underline-offset-8 text-black dark:text-zinc-50"
+          className="underline underline-offset-8 text-black dark:text-zinc-50 dark:hover:text-zinc-500 hover:text-zinc-600"
         >
           email.
         </Link>

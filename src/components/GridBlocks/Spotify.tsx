@@ -45,7 +45,7 @@ const SpotifyBlock = () => {
       >
         {albumCover && (
           <div
-            className="absolute inset-0 opacity-60"
+            className="absolute inset-0 opacity-95 dark:opacity-60"
             style={{
               backgroundImage: `url(${albumCover})`,
               backgroundSize: "cover",
