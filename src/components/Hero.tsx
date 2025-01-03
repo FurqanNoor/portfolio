@@ -19,8 +19,8 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="pt-5">
-        Hi, I&#39;m currently taking the next step in my journey by applying for
-        a bachelor&#39;s degree in information technology. My interests include
+        hi, i&#39;m currently taking the next step in my journey by applying for
+        a bachelor&#39;s degree in information technology. my interests include
         full-stack development and understanding how technology impacts everyday
         applications.
         {/* hi, i am currently a freshman at a university of applied sciences,
