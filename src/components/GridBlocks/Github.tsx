@@ -5,7 +5,7 @@ const GitHubBlock = () => {
   return (
     <Link
       className="sm:col-span-4 col-span-1 bg-zinc-900 h-24 text-white rounded-xl flex justify-center relative overflow-hidden hover:scale-95 duration-500 transform-gpu shadow-lg hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-      href="/"
+      href="https://github.com/FurqanNoor"
       rel="noopener noreferrer"
       target="_blank"
     >
