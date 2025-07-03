@@ -4,5 +4,5 @@ export const siteConfig = {
   description: "my portfolio website.",
   ogImage: "",
   twitterHandle: "@furggoo",
-  lastUpdated: "December 15, 2024",
+  lastUpdated: "July 2, 2025",
 };
