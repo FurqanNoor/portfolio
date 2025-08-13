@@ -19,14 +19,14 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="pt-5">
-        hi, i&#39;m currently taking the next step in my journey by applying for
+        {/*}hi, i&#39;m currently taking the next step in my journey by applying for
         a bachelor&#39;s degree in information technology. my interests include
         full-stack development and understanding how technology impacts everyday
-        applications.
-        {/* hi, i am currently a freshman at a university of applied sciences,
-        pursuing a bachelor&#39;s degree in information technology. my interests
+        applications.*/}
+        hi, i am currently a freshman at a university of applied sciences,
+        pursuing a bachelor&#39;s degree in mechanical engineering. my interests
         include full-stack development and understanding how technology impacts
-        everyday applications. */}
+        everyday applications.
       </div>
       <div className="pt-5">
         beyond my studies, i enjoy listening to music, playing videogames and
