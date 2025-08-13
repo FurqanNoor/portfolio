@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="text-base pt-1">
-        <p>20yo Software Engineer</p>
+        <p>20yo Software Developer</p>
         <p className="text-base flex items-center">
           <MapPin className="w-4 h-4 mr-1" />
           Turku, Finland
@@ -23,10 +23,7 @@ const Hero: React.FC = () => {
         a bachelor&#39;s degree in information technology. my interests include
         full-stack development and understanding how technology impacts everyday
         applications.*/}
-        hi, i am currently a freshman at a university of applied sciences,
-        pursuing a bachelor&#39;s degree in mechanical engineering. my interests
-        include full-stack development and understanding how technology impacts
-        everyday applications.
+        hi, i&#39;m a freshman at turku university of applied sciences, studying mechanical engineering. my background&#39;s in software development, and i&#39;m interested in full-stack development and how technology shapes everyday life. while my current degree&#39;s in engineering, i&#39;m continuing to grow my skills in ict alongside my studies.
       </div>
       <div className="pt-5">
         beyond my studies, i enjoy listening to music, playing videogames and
