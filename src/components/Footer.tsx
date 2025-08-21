@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import React from "react";
-import Link from "next/link";
-import { Github, Mail } from "lucide-react";
-import { siteConfig } from "@/lib/site-config";
+import type React from "react"
+import Link from "next/link"
+import { Github, Mail } from "lucide-react"
+import { siteConfig } from "@/lib/site-config"
 
 const Footer: React.FC = () => {
   return (
@@ -27,13 +27,11 @@ const Footer: React.FC = () => {
           </Link>
         </div>
         <div className="mt-4 sm:mt-0">
-          <p className="text-gray-500 dark:text-zinc-300">
-            Last updated: {siteConfig.lastUpdated}
-          </p>
+          <p className="text-gray-500 dark:text-zinc-300">Last updated: {siteConfig.lastUpdated}</p>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
