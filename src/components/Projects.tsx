@@ -49,7 +49,7 @@ const projects: Project[] = [
     link: "https://github.com/FurqanNoor/2D-Topdown",
     status: "Finished",
     technologies: ["Unity", "C#", "GitHub"],
-    logo: "/console.png",
+    logo: "/unity.png",
   },
   {
     name: "Mosque-Medina",
