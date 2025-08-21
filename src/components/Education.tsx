@@ -41,7 +41,7 @@ const coursesData: CourseItem[] = [
   {
     platform: "Codecademy",
     course: "Learn JavaScript",
-    duration: "2023",
+    duration: "2023/05",
     description:
       "Completed basic JavaScript course covering fundamental programming concepts, variables, functions, and core JavaScript syntax.",
     logo: "/codecademy.png",
