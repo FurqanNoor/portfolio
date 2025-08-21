@@ -33,7 +33,7 @@ const WorkExperience: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4">
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-10 h-10 rounded-lg overflow-hidden dark:bg-white flex items-center justify-center p-1">
+                  <div className="w-10 h-10 flex items-center justify-center">
                     <Image
                       src={work.logo || "/placeholder.svg"}
                       alt={`${work.company} logo`}

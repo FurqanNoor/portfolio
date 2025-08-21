@@ -63,7 +63,7 @@ const Education: React.FC = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   {edu.logo && (
-                    <div className="w-10 h-10 rounded-lg overflow-hidden dark:bg-white flex items-center justify-center p-1">
+                    <div className="w-10 h-10 flex items-center justify-center">
                       <Image
                         src={edu.logo || "/placeholder.svg"}
                         alt={`${edu.institution} logo`}
@@ -120,7 +120,7 @@ const Education: React.FC = () => {
                   <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
                       {course.logo && (
-                        <div className="w-10 h-10 rounded-lg overflow-hidden dark:bg-white flex items-center justify-center p-1">
+                        <div className="w-10 h-10 flex items-center justify-center">
                           <Image
                             src={course.logo || "/placeholder.svg"}
                             alt={`${course.platform} logo`}

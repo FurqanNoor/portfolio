@@ -74,7 +74,7 @@ const Projects = () => {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   {project.logo && (
-                    <div className="w-10 h-10 rounded-lg overflow-hidden dark:bg-white flex items-center justify-center p-1">
+                    <div className="w-10 h-10 flex items-center justify-center">
                       <Image
                         src={project.logo || "/placeholder.svg"}
                         alt={`${project.name} logo`}
