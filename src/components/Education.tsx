@@ -23,7 +23,7 @@ const educationData: EducationItem[] = [
   {
     institution: "Turku University of Applied Sciences",
     degree: "Bachelor of Engineering, Mechanical Engineering",
-    duration: "2024 - Present",
+    duration: "2025 - Present",
     description:
       "Currently pursuing mechanical engineering while continuing to develop software development skills alongside my studies.",
     logo: "/turkuamk.png",
