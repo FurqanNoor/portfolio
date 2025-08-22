@@ -21,7 +21,7 @@ const projects: Project[] = [
     description: "A full-stack website offering a comprehensive collection of resources related to editing.",
     link: "https://www.editingrsc.com/",
     status: "Currently Working On",
-    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel"],
+    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel", "Supabase", "Drizzle ORM"],
     logo: "/editingrsc.png",
   },
   {
@@ -30,7 +30,7 @@ const projects: Project[] = [
     description: "A website for a local car wash company providing details about their services.",
     link: "https://www.enolanautopesu.com/",
     status: "Finished",
-    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel"],
+    technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel", "React Email"],
     logo: "/enola-autopesu.png",
   },
   {
