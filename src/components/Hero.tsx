@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
         <p className="pt-5 text-base text-black dark:text-zinc-50">Furqan Noor</p>
       </div>
       <div className="text-base pt-1">
-        <p>20yo Software Developer</p>
+        <p>21yo Software Developer</p>
         <p className="text-base flex items-center">
           <MapPin className="w-4 h-4 mr-1" />
           Turku, Finland
@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
         </Link>{" "}
         or drop an{" "}
         <Link
-          href="mailto:furqannoor311@gmail.com"
+          href="mailto:noor.furqan@outlook.com"
           className="underline underline-offset-8 text-black dark:text-zinc-50 dark:hover:text-zinc-500 hover:text-zinc-600"
         >
           email.
