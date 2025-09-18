@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             <span>GitHub</span>
           </Link>
           <Link
-            href="mailto:furqannoor311@gmail.com"
+            href="mailto:noor.furqan@outlook.com"
             className="flex items-center space-x-1 hover:text-gray-600 dark:hover:text-zinc-400 transition"
           >
             <Mail className="w-4 h-4" />
