@@ -19,7 +19,7 @@ const projects: Project[] = [
     name: "EditingRsc",
     date: "2024/08",
     description: "A full-stack website offering a comprehensive collection of resources related to editing.",
-    link: "https://www.editingrsc.com/",
+    link: "https://editingsrc.vercel.app/",
     status: "Currently Working On",
     technologies: ["Next.js", "Tailwind CSS", "Typescript", "Vercel", "Supabase", "Drizzle ORM"],
     logo: "/editingrsc.png",
